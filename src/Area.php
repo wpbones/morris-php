@@ -1,9 +1,9 @@
 <?php
 
-namespace WPXServerLight\MorrisPHP;
+namespace WPKirk\MorrisPHP;
 
-use WPXServerLight\MorrisPHP\Chart;
-use WPXServerLight\MorrisPHP\ChartTypes;
+use WPKirk\MorrisPHP\Chart;
+use WPKirk\MorrisPHP\ChartTypes;
 
 /**
  * Morris Area Chart
@@ -15,7 +15,8 @@ use WPXServerLight\MorrisPHP\ChartTypes;
  * @version         1.0.0
  *
  */
-class Area extends Chart {
+class Area extends Chart
+{
 
   /**
    * Change the opacity of the area fill colour.

@@ -1,9 +1,9 @@
 <?php
 
-namespace WPXServerLight\MorrisPHP;
+namespace WPKirk\MorrisPHP;
 
-use WPXServerLight\MorrisPHP\Chart;
-use WPXServerLight\MorrisPHP\ChartTypes;
+use WPKirk\MorrisPHP\Chart;
+use WPKirk\MorrisPHP\ChartTypes;
 
 /**
  * Morris Bar Chart
@@ -15,7 +15,8 @@ use WPXServerLight\MorrisPHP\ChartTypes;
  * @version         1.0.0
  *
  */
-class Bar extends Chart {
+class Bar extends Chart
+{
 
   protected $barSizeRatio = 0.75;
 
@@ -23,7 +24,7 @@ class Bar extends Chart {
 
   protected $barOpacity = 1.0;
 
-  protected $barRadius = array( 0, 0, 0, 0 );
+  protected $barRadius = [ 0, 0, 0, 0 ];
 
   protected $xLabelMargin = 50;
 
@@ -34,7 +35,7 @@ class Bar extends Chart {
    *
    * @var array $barColors
    */
-  protected $barColors = array(
+  protected $barColors = [
     '#0b62a4',
     '#7a92a3',
     '#4da74d',
@@ -42,7 +43,7 @@ class Bar extends Chart {
     '#edc240',
     '#cb4b4b',
     '#9440ed'
-  );
+  ];
 
   /**
    * Set to true to draw bars stacked vertically.

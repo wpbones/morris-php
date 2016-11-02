@@ -1,11 +1,11 @@
 <?php
 
-namespace WPXServerLight\MorrisPHP;
+namespace WPKirk\MorrisPHP;
 
-use WPXServerLight\MorrisPHP\Area;
-use WPXServerLight\MorrisPHP\Bar;
-use WPXServerLight\MorrisPHP\Donut;
-use WPXServerLight\MorrisPHP\Line;
+use WPKirk\MorrisPHP\Area;
+use WPKirk\MorrisPHP\Bar;
+use WPKirk\MorrisPHP\Donut;
+use WPKirk\MorrisPHP\Line;
 
 /**
  * Model class constanst with Morris Chart types
@@ -69,7 +69,7 @@ class Morris
    *
    * @var array $data
    */
-  protected $data = array();
+  protected $data = [];
 
   /**
    * Create an instance of Morris class
@@ -83,8 +83,6 @@ class Morris
    */
   public function __construct( $element_id, $chart = ChartTypes::LINE )
   {
-    trigger_error( "Morris sotto server light" );
-
     $this->element      = $element_id;
     $this->__chart_type = $chart;
   }
@@ -98,7 +96,7 @@ class Morris
    */
   public function toArray()
   {
-    $return = array();
+    $return = [];
     foreach ( $this as $property => $value ) {
       if ( '__' == substr( $property, 0, 2 ) || '' === $value || is_null( $value ) || ( is_array( $value ) && empty( $value ) ) ) {
         continue;

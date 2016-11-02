@@ -1,7 +1,7 @@
 {
-  "name": "gfazioli/wpbones-morris-php",
-  "version": "0.1.0",
-  "homepage": "https://github.com/gfazioli/wpbones-morris-php",
+  "name": "wpbones/morris-php",
+  "version": "1.0.5",
+  "homepage": "https://github.com/wpbones/morris-php",
   "license": "MIT",
   "type": "library",
   "description": "WPBones fluent PHP helper classes for morris.js",
@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/gfazioli/wpbones-morris-php.git"
+    "url": "https://github.com/wpbones/morris-php.git"
   },
   "support": {
     "email": "giovambattista.fazioli@gmail.com",
-    "issues": "https://github.com/gfazioli/wpbones-morris-php/issues"
+    "issues": "https://github.com/wpbones/morris-php/issues"
   },
   "minimum-stability": "stable",
   "autoload": {
