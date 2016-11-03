@@ -7,16 +7,6 @@ use WPKirk\MorrisPHP\Bar;
 use WPKirk\MorrisPHP\Donut;
 use WPKirk\MorrisPHP\Line;
 
-/**
- * Model class constanst with Morris Chart types
- *
- * @class           MorrisChartType
- * @author          =undo= <info@wpxtre.me>
- * @copyright       Copyright (C) 2012-2014 wpXtreme Inc. All Rights Reserved.
- * @date            2014-04-09
- * @version         1.0.0
- *
- */
 class ChartTypes
 {
 
@@ -26,16 +16,6 @@ class ChartTypes
   const AREA  = 'Area';
 }
 
-/**
- * Main Morris model class
- *
- * @class           MorrisChart
- * @author          =undo= <info@wpxtre.me>
- * @copyright       Copyright (C) 2012-2014 wpXtreme Inc. All Rights Reserved.
- * @date            2014-04-01
- * @version         1.0.0
- *
- */
 class Morris
 {
 
@@ -194,6 +174,8 @@ class Morris
 
   public static function __callStatic( $name, $arguments )
   {
+    $instance = null;
+
     switch ( $name ) {
       case 'area':
         $instance = new Area( $arguments[ 0 ] );
@@ -210,6 +192,23 @@ class Morris
     }
 
     return $instance;
+  }
+
+  public static function enqueue()
+  {
+    // morris
+    wp_enqueue_style( 'morris-css', '//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css',
+                      [],
+                      WPKirk()->Version );
+
+    wp_enqueue_script( 'raphael', '//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',
+                       [ 'jquery' ],
+                       WPKirk()->Version,
+                       true );
+    wp_enqueue_script( 'morris-js', '//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js',
+                       [ 'raphael' ],
+                       WPKirk()->Version,
+                       true );
   }
 
 }

@@ -5,16 +5,6 @@ namespace WPKirk\MorrisPHP;
 use WPKirk\MorrisPHP\Chart;
 use WPKirk\MorrisPHP\ChartTypes;
 
-/**
- * Morris Bar Chart
- *
- * @class           MorrisBarChart
- * @author          =undo= <info@wpxtre.me>
- * @copyright       Copyright (C) 2012-2014 wpXtreme Inc. All Rights Reserved.
- * @date            2014-04-01
- * @version         1.0.0
- *
- */
 class Bar extends Chart
 {
 
