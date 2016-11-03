@@ -17,3 +17,39 @@ This package works with a WordPress plugin written with [WP Bones framework libr
     
     $ php bones update
 
+## Enqueue for Controller
+
+You can use the provider to enqueue the styles.
+
+```php
+public function index()
+{
+  // enqueue the minified version
+  Morris::enqueue();
+  
+  // ...
+  
+}
+```
+
+In your view:
+
+```html
+<div id="morris-area"></div>
+
+<?php
+
+echo Morris::area( 'morris-area' )
+           ->xkey( [ 'y' ] )
+           ->ykeys( [ 'a', 'b' ] )
+           ->labels( [ 'Series A', 'Series B' ] )
+           ->data( [
+                     [ "y" => '2006', "a" => 100, "b" => 90 ],
+                     [ "y" => '2007', "a" => 75, "b" => 65 ],
+                     [ "y" => '2008', "a" => 50, "b" => 40 ],
+                     [ "y" => '2009', "a" => 75, "b" => 65 ],
+                     [ "y" => '2010', "a" => 50, "b" => 40 ],
+                     [ "y" => '2011', "a" => 75, "b" => 65 ],
+                     [ "y" => '2012', "a" => 100, "b" => 90 ]
+                   ] );
+```
