@@ -2,11 +2,6 @@
 
 namespace WPKirk\MorrisPHP;
 
-use WPKirk\MorrisPHP\Area;
-use WPKirk\MorrisPHP\Bar;
-use WPKirk\MorrisPHP\Donut;
-use WPKirk\MorrisPHP\Line;
-
 class ChartTypes
 {
 
@@ -99,33 +94,6 @@ class Morris
     return json_encode( $this->toArray() );
   }
 
-  /**
-   * Return the HTML markup for Javascript code
-   *
-   * @deprecated
-   * @return string
-   */
-  public function toJavascript()
-  {
-    ob_start();
-    ?>
-    <script type="text/javascript">
-      jQuery( function( $ )
-      {
-        "use strict";
-
-        Morris.<?php echo $this->__chart_type ?>(
-          <?php echo $this->toJSON() ?>
-        );
-      } );
-    </script>
-    <?php
-    $buffer = ob_get_contents();
-    ob_end_clean();
-
-    return $buffer;
-  }
-
   public function __toString()
   {
     ob_start();
@@ -134,6 +102,10 @@ class Morris
       jQuery( function( $ )
       {
         "use strict";
+
+        if( !$( "#<?php echo $this->element ?>" ).is( ":visible" ) ) {
+          return;
+        }
 
         Morris.<?php echo $this->__chart_type ?>(
           <?php echo $this->toJSON() ?>
