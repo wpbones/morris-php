@@ -2,6 +2,8 @@
 
 namespace WPKirk\MorrisPHP;
 
+use WPKirk\WPBones\Support\Str;
+
 class ChartTypes
 {
 
@@ -123,11 +125,11 @@ class Morris
   {
     foreach ( $this as $key => $value ) {
       if ( $name == $key ) {
-        return $this->$key;
+        return $this->{$key};
       }
     }
 
-    $method = 'get' . ucfirst( $name ) . 'Attribute';
+    $method = 'get' . Str::studly( $name ) . 'Attribute';
     if ( method_exists( $this, $method ) ) {
       return call_user_func( [ $this, $method ] );
     }
@@ -137,7 +139,7 @@ class Morris
   {
     foreach ( $this as $key => $value ) {
       if ( $name == $key ) {
-        $this->$key = $arguments[ 0 ];
+        $this->{$key} = $arguments[ 0 ];
 
         return $this;
       }
