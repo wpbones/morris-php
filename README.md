@@ -49,6 +49,7 @@ echo Morris::area( 'morris-area' )
            ->xkey( [ 'y' ] )
            ->ykeys( [ 'a', 'b' ] )
            ->labels( [ 'Series A', 'Series B' ] )
+           ->hoverCallback( 'function(index, options, content){var row = options.data[index];return "sin(" + row.x + ") = " + row.y;}' )
            ->data( [
                      [ "y" => '2006', "a" => 100, "b" => 90 ],
                      [ "y" => '2007', "a" => 75, "b" => 65 ],
