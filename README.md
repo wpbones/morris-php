@@ -13,15 +13,21 @@ This package works with a WordPress plugin written with [WP Bones framework libr
 
 You can install third party packages by using:
 
-    $ php bones require wpbones/pure-css-tabs
+```sh
+php bones require wpbones/pure-css-tabs
+```
    
 I advise to use this command instead of `composer require` because doing this an automatic renaming will done.  
 
-    $ composer require wpbones/morris-php
+```sh
+composer require wpbones/morris-php
+```
     
 ## Updating
-    
-    $ php bones update
+
+```sh    
+php bones update
+```
 
 ## Enqueue for Controller
 

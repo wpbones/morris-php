@@ -9,7 +9,7 @@ class Area extends Chart
 {
 
   /**
-   * Change the opacity of the area fill colour.
+   * Change the opacity of the area fill color.
    * Accepts values between 0.0 (for completely transparent) and 1.0 (for completely opaque).
    *
    * @brief Opacity
