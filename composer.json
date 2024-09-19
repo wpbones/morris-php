@@ -12,23 +12,23 @@
   ],
   "authors": [
     {
-    "name": "Giovambattista Fazioli",
-    "email": "giovambattista.fazioli@gmail.com",
-    "homepage" : "http://wpbones.wordpress.com"
-    }    
+      "name": "Giovambattista Fazioli",
+      "email": "wpbones.info@gmail.com",
+      "homepage": "https://wpbones.vercel.app/docs/Packages/official-packages"
+    }
   ],
   "support": {
-    "email": "giovambattista.fazioli@gmail.com",
+    "email": "wpbones.info@gmail.com",
     "issues": "https://github.com/wpbones/morris-php/issues"
   },
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-       "WPKirk\\MorrisPHP\\": "src/"
+      "WPKirk\\MorrisPHP\\": "src/"
     }
   },
-  "prefer-stable" : true,
+  "prefer-stable": true,
   "require": {
-    "php": ">=7.2"
+    "php": ">=7.4"
   }
 }
