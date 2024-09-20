@@ -26,6 +26,8 @@
 
 This package provides a simple way to use the [MorrisJS](https://morrisjs.github.io/morris.js/) library in your WordPress plugin.
 
+![MorrisJS PHP version for WP Bones](https://github.com/user-attachments/assets/194a457a-f48e-41f5-bcd7-8676b5506457)
+
 ## Requirements
 
 This package works with a WordPress plugin written with [WP Bones framework library](https://github.com/wpbones/WPBones).
