@@ -1,28 +1,14 @@
 # MorrisJS PHP version for WP Bones
 
-<p align="center">
+<div align="center">
 
-  <a href="https://packagist.org/packages/wpbones/morris-php">
-  <img src="https://poser.pugx.org/wpbones/morris-php/v/stable?style=for-the-badge" alt="Latest Stable Version" />
-  </a>
+[![Latest Stable Version](https://poser.pugx.org/wpbones/morris-php/v/stable?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
+[![Latest Unstable Version](https://poser.pugx.org/wpbones/morris-php/v/unstable?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
+[![Total Downloads](https://poser.pugx.org/wpbones/morris-php/downloads?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
+[![License](https://poser.pugx.org/wpbones/morris-php/license?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
+[![Monthly Downloads](https://poser.pugx.org/wpbones/morris-php/d/monthly?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php)
 
-  <a href="https://packagist.org/packages/wpbones/morris-php">
-   <img src="https://poser.pugx.org/wpbones/morris-php/v/unstable?style=for-the-badge" alt="Latest Unstable Version" />
-  </a>
-
-  <a href="https://packagist.org/packages/wpbones/morris-php">
-   <img src="https://poser.pugx.org/wpbones/morris-php/downloads?style=for-the-badge" alt="Total Downloads" />
-  </a>
-
-  <a href="https://packagist.org/packages/wpbones/morris-php">
-   <img src="https://poser.pugx.org/wpbones/morris-php/license?style=for-the-badge" alt="License" />
-  </a>
-
-  <a href="https://packagist.org/packages/wpbones/morris-php">
-   <img src="https://poser.pugx.org/wpbones/morris-php/d/monthly?style=for-the-badge" alt="Monthly Downloads" />
-  </a>
-
-</p>
+</div>
 
 This package provides a simple way to use the [MorrisJS](https://morrisjs.github.io/morris.js/) library in your WordPress plugin.
 
