@@ -41,7 +41,7 @@ You may also to add `"wpbones/morris-php": "~0.7"` in the `composer.json` file o
   "require": {
     "php": ">=7.4.0",
     "wpbones/wpbones": "~1.5",
-    "wpbones/morris-php": "~1.0"
+    "wpbones/morris-php": "~1.1"
   },
 ```
 
@@ -55,14 +55,24 @@ composer install
 
 You can use the provider to enqueue the styles.
 
+
 ```php copy
-public function index()
+use WPKirk\Http\Controllers\Controller;
+use WPKirk\MorrisPHP\Morris;
+
+class MorrisPHPController extends Controller
 {
-  // enqueue the minified version
-  Morris::enqueue();
+  public function index()
+  {
 
-  // ...
+    Morris::enqueue();
 
+    return WPKirk()
+      ->view('packages.morris-php.index')
+      ->withAdminStyle('prism')
+      ->withAdminScript('prism')
+      ->withAdminStyle('wp-kirk-common');
+  }
 }
 ```
 
