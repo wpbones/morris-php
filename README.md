@@ -3,7 +3,6 @@
 <div align="center">
 
 [![Latest Stable Version](https://poser.pugx.org/wpbones/morris-php/v/stable?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
-[![Latest Unstable Version](https://poser.pugx.org/wpbones/morris-php/v/unstable?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
 [![Total Downloads](https://poser.pugx.org/wpbones/morris-php/downloads?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
 [![License](https://poser.pugx.org/wpbones/morris-php/license?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php) &nbsp;
 [![Monthly Downloads](https://poser.pugx.org/wpbones/morris-php/d/monthly?style=for-the-badge)](https://packagist.org/packages/wpbones/morris-php)
